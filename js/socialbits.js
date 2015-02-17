@@ -2,6 +2,8 @@ function buildInsta(data) {
   var instagram = Sheetsee.ich.instagram({
     "rows": getLast(data, 1)
   }, {})
+  console.log( data )
+  console.log( instagram )
   document.getElementById('instagram').innerHTML = instagram
 }
 

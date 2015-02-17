@@ -2,8 +2,6 @@ function buildInsta(data) {
   var instagram = Sheetsee.ich.instagram({
     "rows": getLast(data, 1)
   }, {})
-  console.log( data )
-  console.log( instagram )
   document.getElementById('instagram').innerHTML = instagram
 }
 
@@ -22,7 +20,7 @@ function buildTweet(data) {
 function getLast(array, howMany) {
   start = array.length
   cut = start - howMany
-  if (start < 12) {
+  if (start < 1) {
   return array
   } else {
     array = array.splice(cut)
